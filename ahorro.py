@@ -7,3 +7,4 @@ def calcular_fv (P0, PMT, tasa, meses):
         return P0 * (1 + tasa)**meses + PMT * (((1 + tasa)**meses - 1) / tasa)
     except ZeroDivisionError:
         return P0 + PMT * meses
+
