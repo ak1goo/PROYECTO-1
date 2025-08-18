@@ -8,4 +8,7 @@ def calcular_fv (P0, PMT, tasa, meses):
     except ZeroDivisionError:
         return P0 + PMT * meses
     
-#def calcular_pmt(meta, P0, tasa, meses):
+def calcular_pmt(meta, P0, tasa, meses):
+    if tasa == 0:
+        return (meta - P0) / meses
+    return ((meta - P0 * (1 + tasa)*meses) * tasa) / ((1 + tasa)*meses - 1)
