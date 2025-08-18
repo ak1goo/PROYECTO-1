@@ -1,0 +1,22 @@
+--- Ayuda: Calculadora de Ahorro ---
+
+Este programa permite:
+1. Calcular cuánto dinero tendrás en el futuro (FV).
+2. Calcular cuánto debes ahorrar cada mes (PMT).
+3. Salir del programa.
+
+Ejemplo de uso:
+---------------
+Opción 1: Calcular FV
+Capital inicial: 1000
+Aporte mensual: 200
+Tasa de interés anual: 0.06
+Meses: 12
+Resultado = En 12 meses tendrás: 3553.64
+
+Opción 2: Calcular PMT
+Meta: 5000
+Capital inicial: 1000
+Tasa anual: 0.05
+Meses: 24
+Resultado = Debes ahorrar cada mes: 159.19
