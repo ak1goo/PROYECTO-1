@@ -1,8 +1,7 @@
 ﻿# PROYECTO-1
 
 # Instrucciones de uso del programa
-
-
+Este programa tiene el proposito de Crear una calculadora financiera de ahorros funcional teniendo metas y proyecciones a largo plazo.
 
 # Integrantes del equipo y roles
 
