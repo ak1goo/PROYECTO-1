@@ -37,3 +37,33 @@ Meses = 4
 
 Salida esperada:
 Debes ahorrar cada mes: 2184.62
+
+Prueba 6:
+Entrada:
+Meta - 1000
+Capital inicial -50
+Tasa de interes anual 0.07
+Meses = 9
+
+Debes ahorrar cada mes: 102.82
+
+Prueba 7:
+Capital inicial - 5000
+Aporte mensual - 500
+Tasa de interes anual - 0.04
+Meses - 4
+En 4 meses tendras 7077.02
+
+Prueba 8:
+Meta - 10000
+Capital inicial - 600
+Tasa de interes anual - 0.08
+Meses - 7
+Debes ahorrar cada mes - 1312.24
+
+Prueba 9:
+Capital incial - 25000
+Aporte mensual - 2500
+Tasa de interes anual - 0.09
+Meses - 6
+En 6 meses tendras 41430.38
