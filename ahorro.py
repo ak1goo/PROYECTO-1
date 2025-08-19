@@ -21,21 +21,6 @@ class calculadora_ahorro:
         return ((meta - self.P0 * (1 + self.tasa) ** self.meses) * self.tasa) / ((1 + self.tasa) ** self.meses - 1)
 
 class InterfazCalculadora:
-    @staticmethod
-    def pedir_float(mensaje):
-        while True:
-            try:
-                return float(input(mensaje))
-            except ValueError:
-                print("Entrada inválida. Ingresa un número válido.")
-
-    @staticmethod
-    def  pedir_int(mensaje):
-        while True:
-            try:
-                return int(input(mensaje))
-            except ValueError:
-                print(" Entrada inválida. Ingresa un número entero válido.")
 
     @staticmethod
     def menu():
