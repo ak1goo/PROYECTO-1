@@ -1,5 +1,5 @@
 class calculadora_ahorro:
-    def __instancecheck__(self, P0=0.0, PMT=0.0, tasa=0.0, meses=0):
+    def __init__(self, P0=0.0, PMT=0.0, tasa=0.0, meses=0):
         self.P0 = P0        
         self.PMT = PMT      
         self.tasa = tasa    
@@ -11,7 +11,7 @@ class calculadora_ahorro:
                 raise ValueError("La tasa no puede ser negativa y los meses deben ser > 0")
             if self.tasa == 0:
                 return self.P0 + self.PMT * self.meses
-            return self.P0 * (1 + self.tasa) ** self.meses + self.PMT * ((1 + self.tasa) ** self.meses - 1) / self.tasa)
+            return self.P0 * (1 + self.tasa) ** self.meses + self.PMT * (((1 + self.tasa) ** self.meses - 1) / self.tasa)
         except ZeroDivisionError:
             return self.P0 + self.PMT * self.meses
         
@@ -20,7 +20,6 @@ class calculadora_ahorro:
             return (meta - self.P0) / self.meses
         return ((meta - self.P0 * (1 + self.tasa) ** self.meses) * self.tasa) / ((1 + self.tasa) ** self.meses - 1)
 
-        
 class InterfazCalculadora:
     @staticmethod
     def menu():
@@ -37,7 +36,7 @@ class InterfazCalculadora:
                 PMT = float(input("Aporte mensual: "))
                 tasa_anual = float(input("Tasa de interés anual (ej. 0.05 = 5%): "))
                 meses = int(input("Número de meses: "))
-                calc = calculadora_ahorro(P0, PMT, tasa_anual / 12, meses)
+                calc = InterfazCalculadora(P0, PMT, tasa_anual / 12, meses)
                 fv = calc.calcular_fv()
                 print(f"En {meses} meses tendrás: {fv:.2f}")
 
@@ -46,7 +45,7 @@ class InterfazCalculadora:
                 P0 = float(input("Capital inicial: "))
                 tasa_anual = float(input("Tasa de interés anual (ej. 0.05 = 5%): "))
                 meses = int(input("Número de meses: "))
-                calc = calculadora_ahorro(P0, 0, tasa_anual / 12, meses)
+                calc = InterfazCalculadora(P0, 0, tasa_anual / 12, meses)
                 pmt = calc.calcular_pmt(meta)
                 print(f"Debes ahorrar cada mes: {pmt:.2f}")
 
@@ -56,3 +55,5 @@ class InterfazCalculadora:
             else:
                 print("Opción no válida, intenta de nuevo.")
 
+if __name__ == "__main__":
+    InterfazCalculadora.menu()
