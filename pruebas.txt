@@ -27,3 +27,13 @@ Meses = 24
 
 Salida esperada:
 Debes ahorrar cada mes: 159.19
+
+PRUEBA 5:
+Entrada:
+Meta - 8900
+Capital inicial - 50
+Tasa anual = 0.10
+Meses = 4
+
+Salida esperada:
+Debes ahorrar cada mes: 2184.62
