@@ -36,7 +36,7 @@ class InterfazCalculadora:
                 PMT = float(input("Aporte mensual: "))
                 tasa_anual = float(input("Tasa de interés anual (ej. 0.05 = 5%): "))
                 meses = int(input("Número de meses: "))
-                calc = InterfazCalculadora(P0, PMT, tasa_anual / 12, meses)
+                calc = calculadora_ahorro(P0, PMT, tasa_anual / 12, meses)
                 fv = calc.calcular_fv()
                 print(f"En {meses} meses tendrás: {fv:.2f}")
 
@@ -45,7 +45,7 @@ class InterfazCalculadora:
                 P0 = float(input("Capital inicial: "))
                 tasa_anual = float(input("Tasa de interés anual (ej. 0.05 = 5%): "))
                 meses = int(input("Número de meses: "))
-                calc = InterfazCalculadora(P0, 0, tasa_anual / 12, meses)
+                calc = calculadora_ahorro(P0, 0, tasa_anual / 12, meses)
                 pmt = calc.calcular_pmt(meta)
                 print(f"Debes ahorrar cada mes: {pmt:.2f}")
 
