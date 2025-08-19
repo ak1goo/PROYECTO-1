@@ -1,0 +1,9 @@
+PRUEBA 1:
+Prueba de digitos en menu principal.
+-El codigo funciona a uso normal.
+Errores: -Conversiones de Float y sring. Digitos invalidos al ingreso.
+
+PRUEBA 2:
+Arreglo del error string.
+Se agregaron dos metodos de ingreso de digitos de forma segura.
+Errores: Los metodos no funcionaron correctamene.
