@@ -7,3 +7,23 @@ PRUEBA 2:
 Arreglo del error string.
 Se agregaron dos metodos de ingreso de digitos de forma segura.
 Errores: Los metodos no funcionaron correctamene.
+
+PRUEBA 3:
+Entrada:
+Capital inicial = 1000
+Aporte mensual = 200
+Tasa anual = 0.06
+Meses = 12
+
+Salida esperada:
+En 12 meses tendrás: 3553.64
+
+PRUEBA 4:
+Entrada:
+Meta = 5000
+Capital inicial = 1000
+Tasa anual = 0.05
+Meses = 24
+
+Salida esperada:
+Debes ahorrar cada mes: 159.19
