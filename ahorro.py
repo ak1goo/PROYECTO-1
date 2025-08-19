@@ -25,7 +25,7 @@ class InterfazCalculadora:
     @staticmethod
     def menu():
         while True:
-            print("\n=== Calculadora de Ahorro (POO) ===")
+            print("\n=== Calculadora de Ahorro ===")
             print("1. Calcular cuánto tendré en el futuro (FV)")
             print("2. Calcular cuánto debo ahorrar cada mes (PMT)")
             print("3. Salir")
