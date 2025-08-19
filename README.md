@@ -6,12 +6,13 @@
 
 # Integrantes del equipo y roles
 
-Rocio Iveth Cojulum Juárez----
-Heidelle Legrand 
-Mario Javier
-
+Heidelle Legrand --------- Modelador matemático 
+Mario Javier ----------- Tester
+Rocio Iveth Cojulum Juárez------- Documentador tecnico
+El trabajo de interfaz de flujo será repartido entre los 3 integrantes
 
 # Problemas econtrados y soluciones
+
 
 
 
