@@ -1,0 +1,9 @@
+1. Desarrollador
+Ahorro.py:
+Capital inicial
+Aporte mensual
+Tasa de interés mensual (no anual)
+ Número de meses
+
+1.Valor futuro con interés compuesto
+2.Aporte mensual necesario para llegar a la meta
