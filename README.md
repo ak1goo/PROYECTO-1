@@ -12,6 +12,7 @@ El proyecto contiene dos clases principales las cuales son:
 Esta es una clase creada la cual contiene la logica matemática del programa permitiendo calcular valores con los datos dados por el usuario los cuales serian capital inicial entre otros y usando las tasas de interes y el número de meses que se desea utilizar para el calculo y aportes mensuales para llegar a las metas deseadas por el usuario.
 
 - InterfazCalculadora:
+
 Esta clase  maneja la interacción del usuario por medio de un menú en el cual ellos pueden elegir opciones como calcular cuanto dinero llegaran a tener en el futuro, cuanto deben ahorrar y de igual manera este menú redirecciona a otro en el cual el usuario puede ingresar sus datos para poder hacer el calculo.
 
 
