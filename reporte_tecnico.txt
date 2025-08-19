@@ -1,0 +1,96 @@
+Reporte Técnico del Proyecto
+Propuesta 4: Calculadora de Ahorro Personal  
+
+---
+
+1. Objetivo del proyecto  
+El objetivo del proyecto es desarrollar una herramienta en Python que permita calcular metas de ahorro y proyecciones a futuro utilizando interés compuesto.  
+El sistema está diseñado para ser interactivo, fácil de usar y con un flujo guiado mediante menús.   
+
+---
+
+2. Estructura del código  
+El proyecto se organiza en un único archivo principal `ahorro.py` y archivos de documentación de apoyo.  
+
+#Funciones principales  
+-calcular_valor_futuro(pmt, tasa, n)
+  Calcula el valor futuro acumulado con aportes mensuales, tasa anual y número de meses.  
+  Fórmula:  
+FV = PMT * [ (1 + r/n)^(n*t) - 1 ] / (r/n)
+
+-calcular_aporte_mensual(meta, tasa, n)
+Calcula cuánto se debe ahorrar mensualmente para alcanzar una meta.  
+Fórmula inversa:  
+PMT = FV * (r/n) / [ (1 + r/n)^(n*t) - 1 ]
+
+
+-menu()
+Interfaz principal que muestra las opciones al usuario, valida las entradas y llama a las funciones anteriores.  
+
+#Uso de estructuras de programación  
+- **Ciclos:** Se emplea un `while True` en el menú principal para repetir cálculos hasta que el usuario decida salir.  
+- **Condicionales:** Se utilizan `if/else` para distinguir entre cálculos de valor futuro, cálculo de aporte mensual o salida.  
+- **Excepciones:**  
+- `ValueError` para entradas no numéricas.  
+- Control de divisiones por cero y tasas negativas.  
+
+---
+
+3. Roles de equipo y responsabilidades  
+1. **Líder técnico / Desarrollador principal**  
+ - Supervisar que el código use ciclos, condicionales y manejo de errores correctamente.  
+ - Aprobar *pull requests* en GitHub.  
+
+2. **Responsable de pruebas y manejo de errores**  
+ - Diseñar casos de prueba con entradas válidas e inválidas.  
+ - Documentar errores conocidos y su solución en `errores_conocidos.txt`.  
+
+3. **Encargado de interfaz de usuario y flujo**  
+ - Diseñar menús claros e intuitivos.  
+ - Documentar el flujo de uso con pseudocódigo y diagramas.  
+
+4. **Gestor de documentación y repositorio**  
+ - Redactar el archivo `README.md`.  
+ - Mantener actualizados los issues, labels y commits con mensajes claros.  
+ - Documentar el avance en `registro_equipo.md`.  
+
+---
+
+4. Flujo del sistema  
+1. El usuario inicia el programa.  
+2. Se muestra el menú con tres opciones:  
+ - Calcular valor futuro (FV).  
+ - Calcular aporte mensual (PMT).  
+ - Salir.  
+3. El usuario ingresa su elección.  
+4. El sistema solicita los datos necesarios (tasa, tiempo, meta o aporte).  
+5. Se ejecuta la fórmula matemática correspondiente.  
+6. Se muestra el resultado en pantalla.  
+7. El usuario decide si repetir el cálculo o salir.  
+
+---
+
+5. Metodología de control de versiones (Git + GitHub)  
+- **Ramas:** Cada integrante trabaja en su propia rama (`rama_pruebas`, `rama_interfaz`, etc.).  
+- **Commits:** Mínimo 15 por integrante, con mensajes descriptivos.  
+- **Pull requests:** Revisión y aprobación por el líder técnico antes de integrar en `main`.  
+- **Issues y labels:** Uso de etiquetas como `bug`, `documentation`, `enhancement`.  
+
+---
+
+6. Archivos complementarios  
+- `README.md` = Descripción del proyecto, instrucciones de uso y créditos.  
+- `ayuda.txt` = Guía breve con ejemplos de ejecución.  
+- `pruebas.txt` = Casos de prueba documentados con entradas y resultados esperados.  
+- `errores_conocidos.txt` = Registro de bugs detectados y su solución.  
+- `registro_equipo.md` - Bitácora semanal de avances y decisiones del equipo.  
+
+---
+
+ 7. Conclusiones  
+El proyecto cumple con los requisitos de un sistema educativo que combina:  
+- Programación básica (ciclos, condicionales, funciones, excepciones).  
+- Buenas prácticas de desarrollo (Git, GitHub, issues, ramas, documentación).  
+- Trabajo colaborativo con roles definidos.  
+
+El resultado es una herramienta sencilla y funcional, lista para escalarse a versiones más completas en el futuro.  
